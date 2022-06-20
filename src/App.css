@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 15vmin;
   pointer-events: none;
 }
 
@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +35,52 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+form input[type="submit"],
+form button {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #004b7e;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  margin: 15px;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+  transition: all 0.5s ease-in;
+  background-color: #2d85eb;
+}
+
+.label {
+  font-size: 25px;
+  padding: 15px;
+  background-color: #004b7e;
+  color: white;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+  padding: 15px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 16px;
+  margin: 15px;
+  width: 300px;
+}
+
+form select{
+  width: 330px;
 }
